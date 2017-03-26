@@ -1,0 +1,15 @@
+Changes
+
+[20/12/2014]
+	1. scom.m - Line 4: Fixed an error that the program would crash if there were an empty line 
+			           (while (size(line,2)==0 || line(1,1)=='!'))
+	2. naturalfreq.m - Line 18: Improved calculations of modal shapes and natural frequencies
+						[v,d]=eig(M\K);
+	3. loadstructure.m - Line 92: Added preallocation for the variable IDB
+						idb = zeros(length(ivinc),3);
+	4. New files: readStructure.m, buildStructure.m
+			Implemented a new way to build a structure. The geometrical properties of the structures are written inside a file, along with the constraints and the nodes.
+			Then, the function buildStructure parses this file and generate a model with nodes automatically assigned, based on the kind of approximation used.
+[21/12/2014]
+	1. naturalfreq.m - Line 41,51: Now the scale factor is printed when modes of vibrations are shown
+	2.

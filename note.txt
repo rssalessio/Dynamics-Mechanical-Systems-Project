@@ -1,0 +1,20 @@
+possibili candidati:
+
+HEA 260, sezione  epeso simile, ma Jy molto più grande => K più grande
+
+K dipende da EA,EJ-> E costante
+M dipende da rho(costante),A
+
+
+o aumento K => M costante, aumenta sezione e Jx
+o aumento/riduco M => sezione  eJ costanti
+
+ideale A costante, J incrementa
+
+
+heb260
+
+0.2867
+
+
+1.972-> dovrei arrivare a 1.96

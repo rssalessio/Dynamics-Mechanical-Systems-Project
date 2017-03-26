@@ -1,0 +1,39 @@
+! Esercitazione del 10 gennaio 2005 (AA 04-05).
+!
+! elenco dei nodi :
+! n. nodo - codici vincolo assoluti x,y,teta - posiz. x - posiz. y .     
+*NODES
+! qui sotto lista di nodi fino a card di chiusura *ENDNODES
+!    n. nodo     3 codici vincolo (x,y,theta), posiz. x, posiz. y       
+1				    1   1 1	0.00	   0.0     
+2				    0   0 0	0.25	   0.0     
+3				    0   0 0	0.50	   0.0     
+4				    0   0 0	0.75	   0.0     
+5				    0   0 0	1.00       0.0     
+! fine card *NODES
+*ENDNODES
+
+! 		---------------------------------------------
+! elenco degli elementi :
+*BEAMS
+!    n. ele - n. nodo ingresso - n. nodo uscita - densita'*area -   EA  -   EJ	
+1		1		2	9.7500	2.5750e+008    1.3411e+004	
+2		2		3	9.7500	2.5750e+008    1.3411e+004
+3		3		4	9.7500	2.5750e+008    1.3411e+004
+4		4		5	9.7500	2.5750e+008    1.3411e+004
+*ENDBEAMS
+
+*DAMPING
+! alpha and beta values to define the damping matrix
+2.5583   5.4496e-006
+
+
+*SPRINGS
+!n. molla - n. nodo i - n. nodo j - kx     ky  k_theta  rx   ry  r_theta	 
+    1	       4	    0	    0      1e5    0     0    0   0 	
+*ENDSPRINGS
+
+
+*MASSES
+!1     5    4.0    0.2
+*ENDMASSES
